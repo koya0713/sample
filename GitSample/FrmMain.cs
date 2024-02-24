@@ -16,5 +16,31 @@ namespace GitSample
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int leftValue = int.Parse(txtExpression1.Text);
+            int rightValue = int.Parse(txtExpression2.Text);
+            txtResult.Text = (leftValue + rightValue).ToString();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            int leftValue = int.Parse(txtExpression1.Text);
+            int rightValue = int.Parse(txtExpression2.Text);
+            txtResult.Text = (leftValue - rightValue).ToString();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            int leftValue = int.Parse(txtExpression1.Text);
+            int rightValue = int.Parse(txtExpression2.Text);
+            txtResult.Text = (leftValue * rightValue).ToString();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            //あえて指摘を受けよう
+        }
     }
 }
