@@ -42,5 +42,12 @@ namespace GitSample
         {
             //あえて指摘を受けよう
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            double leftValue = double.Parse(txtExpression1.Text);
+            double rightValue = double.Parse(txtExpression2.Text);
+            txtResult.Text = (leftValue / rightValue).ToString();
+        }
     }
 }
